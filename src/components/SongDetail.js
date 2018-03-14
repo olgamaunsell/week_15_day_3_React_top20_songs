@@ -8,8 +8,13 @@ const SongDetail = (props) => {
     <p>Position: {props.position}</p>
     <p>Title: {props.title}</p>
     <p>Artist: {props.artist}</p>
-    <img src={props.image} alt="image of song cover" width='300px'/>
+    <a href={props.link} alt="click for preview"><img
+        src={props.image}
+        alt="song cover"
+        width='300px'
+      /></a>
   </div>
+
   )
 }
 

@@ -20,11 +20,9 @@ class SongContainer extends React.Component {
       if(request.status !== 200) return;
       const jsonString = request.responseText;
       const iTunesData = JSON.parse(jsonString);
-console.log(iTunesData);
       this.setState({songs: iTunesData.feed.entry})
     });
     request.send();
-    console.log(this.state);
   }
 
   handleSongSelected(index){
@@ -32,8 +30,6 @@ console.log(iTunesData);
   }
 
   render() {
-    console.log(this.state.songs);
-
     return (
       <div>
         <h2>UK Top 20 Songs</h2>
@@ -41,8 +37,6 @@ console.log(iTunesData);
       </div>
     )
   }
-
 }
-
 
 export default SongContainer;

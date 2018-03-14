@@ -7,10 +7,10 @@ const SongList = (props) => {
       <SongDetail
         key={index}
         position={index+1}
-        title={song['title'].label}
+        title={song.title.label}
         artist={song['im:artist'].label}
         image={song['im:image'][2].label}
-        // imageHeight={song['im:image'][2].attributes.height}
+        link={song.link[1].attributes.href}
       />
     );
   });
