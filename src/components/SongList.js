@@ -9,6 +9,8 @@ const SongList = (props) => {
         position={index+1}
         title={song['title'].label}
         artist={song['im:artist'].label}
+        image={song['im:image'][2].label}
+        // imageHeight={song['im:image'][2].attributes.height}
       />
     );
   });
