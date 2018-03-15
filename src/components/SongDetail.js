@@ -5,9 +5,8 @@ const SongDetail = (props) => {
   return (
 
   <div>
-    <p>Position: {props.position}</p>
-    <p>Title: {props.title}</p>
-    <p>Artist: {props.artist}</p>
+    <h3>{props.position}. {props.title}</h3>
+    <h4>{props.artist}</h4>
     <a href={props.link} alt="click for preview"><img
         src={props.image}
         alt="song cover"

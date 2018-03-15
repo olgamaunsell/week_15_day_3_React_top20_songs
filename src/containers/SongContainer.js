@@ -1,6 +1,5 @@
 import React from 'react';
 import SongList from '../components/SongList';
-import SongDetail from '../components/SongDetail';
 
 class SongContainer extends React.Component {
   constructor(props) {
